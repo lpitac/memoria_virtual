@@ -1,9 +1,8 @@
 display_name,stub,dropdown_parent
 Home,/
 Consulta,/browse.html
-Subjects,/subjects.html
-Locations,/locations.html
-Map,/map.html
-Timeline,/timeline.html
-Data,/data.html
-About,/about.html
+Temas,/subjects.html
+Liña do tempo,/timeline.html
+Datos abertos,/data.html
+Sobre o proxecto,/about.html
+Blog,https://www.blogger.com/about/?hl=es
