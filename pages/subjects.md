@@ -10,5 +10,5 @@ cloud-fields: site.data.theme.subjects-fields
 
 ## Temas
 
-Emprega esta nube de palabras para buscar termos e temas.
-O tamaño das palabras determínase pola súa frecuencia na colección.
+Emprega esta nube de palabras para explorar os temas que abrangue a colección.
+O tamaño das palabras indica a súa frecuencia na colección.
