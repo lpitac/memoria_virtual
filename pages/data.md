@@ -6,8 +6,8 @@ permalink: /data.html
 # a table visualization will be added below the content in this file
 ---
 
-## Collection Metadata
+## Metadatos da colección
 
-The table below provides sorting and basic search of the collection contents. 
-Use the "CSV" or "Excel" button below to download the filtered metadata you see on the page in your preferred format. 
-Alternatively, click the "Download" button at the top right to view the full collection metadata in various export formats. 
+A seguinte táboa ofrece ordenación e busca básica dos contidos da colección.
+Podes empregar os botóns "CSV" e "Excel" que se amosan a continuación para descargar os metadatos dunha busca.
+Tamén podes facer clic no botón "Descargar" na parte superior dereita para obter tódolos metadatos da colección en varios formatos de exportación.
