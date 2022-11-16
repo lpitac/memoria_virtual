@@ -11,7 +11,7 @@
             {% case t %}
             {% when 'pdf' %} 
 			<a class="text-dark" href="{{ 'pdf' | prepend: '/browse.html#' | relative_url }}">Documentos <svg class="bi icon-sprite text-body" fill="currentColor" aria-hidden="true"><use xlink:href="{{ '/assets/lib/cb-icons.svg' | relative_url }}#icon-pdf"/></svg></a><br>
-            {% else %}
+            {% when 'image' %}
 			<a class="text-dark" href="{{ 'image' | prepend: '/browse.html#' | relative_url }}">Imaxes <svg class="bi icon-sprite text-body" fill="currentColor" aria-hidden="true"><use xlink:href="{{ '/assets/lib/cb-icons.svg' | relative_url }}#icon-image"/></svg></a><br>
             {% when 'audio' %}
             <a class="text-dark" href="{{ 'audio' | prepend: '/browse.html#' | relative_url }}">Sons <svg class="bi icon-sprite text-body" fill="currentColor" aria-hidden="true"><use xlink:href="{{ '/assets/lib/cb-icons.svg' | relative_url }}#icon-audio"/></svg></a><br>
