@@ -4,6 +4,6 @@ date,Data,
 description,Descrición,
 subject,Temas,true
 identifier,Signatura,,
-Licenza,Licenza,,true
-comment, Comentario
+Licenza,Licenza,,
+comment, Comentarios
 data_dix, Data de dixitalización
