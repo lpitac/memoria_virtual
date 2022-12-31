@@ -1,5 +1,5 @@
 field,index,display
-Titulo,true,true
+title,true,true
 Data,true,true
 Descricion,true,true
 Temas,true,true
