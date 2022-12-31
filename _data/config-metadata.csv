@@ -1,9 +1,10 @@
 field,display_name,browse_link,external_link
-titulo,Título,
-date,Data,
-description,Descrición,
-subject,Temas,true
-identifier,Signatura,,
-Licenza,Licenza,
-comment, Comentarios
-data_dix, Data de dixitalización
+Titulo,Título,
+Data,Data,
+Signatura,Signatura,true
+Descrición,Descrición,
+Temas,Temas,true
+Idioma,Idioma
+Comentarios,Comentarios
+Data_dix,Data de dixitalización
+Licenza,Licenza,,
