@@ -1,6 +1,6 @@
 field,index,display
 title,true,true
-Data,true,true
+date,true,true
 Descricion,true,true
 Temas,true,true
 location,true,false

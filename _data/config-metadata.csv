@@ -1,6 +1,6 @@
 field,display_name,browse_link,external_link
 title,Título,
-Data,Data,
+date,Data,
 Signatura,Signatura,
 Descricion,Descrición,
 Temas,Temas,true
