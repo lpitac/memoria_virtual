@@ -3,7 +3,7 @@ Titulo,Título,
 Data,Data,
 Signatura,Signatura,true
 Descrición,Descrición,
-Temas,Temas,true
+subject,Temas,true
 Idioma,Idioma
 Comentarios,Comentarios
 Data_dix,Data de dixitalización
