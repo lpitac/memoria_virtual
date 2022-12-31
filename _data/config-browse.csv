@@ -1,5 +1,4 @@
 field,display_name,btn,hidden,sort_name
-date,Data,,,Data
-creator,Autor,,,
-subject,Tema,true
-location,,true
+Data,Data
+Temas,Temas,true
+
