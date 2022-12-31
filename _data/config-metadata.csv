@@ -2,8 +2,8 @@ field,display_name,browse_link,external_link
 title,Título,
 date,Data,
 Signatura,Signatura,
-Descricion,Descrición,
-Temas,Temas,true
+description,Descrición,
+subject,Temas,true
 Idioma,Idioma
 Comentarios,Comentarios
 Data_dix,Data de dixitalización

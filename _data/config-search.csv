@@ -2,5 +2,5 @@ field,index,display
 title,true,true
 date,true,true
 Descricion,true,true
-Temas,true,true
+subject,true,true
 location,true,false
