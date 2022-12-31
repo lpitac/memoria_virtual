@@ -19,9 +19,7 @@ custom-foot: js/timeline-js.html
 {%- assign navYears = navYears | split: ";" -%}
 {%- endif -%}
 <div class="dropdown float-end" id="year-nav">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="yearButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Ano
-    </button>
+    <button class="btn btn-primary dropdown-toggle" type="button" id="yearButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ano</button>
     <div class="dropdown-menu" aria-labelledby="yearButton">
         {% for y in navYears %}
         <a class="dropdown-item" href="#y{{ y }}">{{ y }}</a>{% endfor %}
