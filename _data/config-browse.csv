@@ -1,4 +1,6 @@
 field,display_name,btn,hidden,sort_name
-date,Data
+title,Título,true
+date,Data,true
+description,Descrición,true
 subject,Temas,true
 
