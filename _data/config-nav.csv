@@ -1,6 +1,7 @@
 display_name,stub,dropdown_parent
 Inicio,/
-Consulta,/browse.html
+Colección,/browse.html
+Busca avanzada,/search
 Temas,/subjects.html
 Liña de tempo,/timeline.html
 Datos abertos,/data.html
