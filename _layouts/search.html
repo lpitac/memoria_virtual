@@ -4,6 +4,18 @@ layout: page
 custom-foot: js/lunr-js.html
 ---
 {%- assign fields = site.data.config-search | where: 'index',true | map: 'field' -%}
+
+{{ content }}
+
+<div class="ms-3 mt-3">
+    <form class="" role="search" id="lunrSearch" onsubmit="lunr_search(); return false;">
+        <div class="input-group input-group-lg">
+            <input id="lunrSearchBox" class="form-control " type="text" placeholder="Introduce os termos de busca" >
+            <button class="btn btn-success" type="submit">
+                Buscar
+            </button>
+        </div>
+    </form>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#operators">Operadores de busca</button>
 <!-- Modal -->
@@ -32,17 +44,6 @@ Ex. <code>regulamento^5</code>, tamén recuperará rexistros que conteñan o ter
     </div>
 </div>
 
-{{ content }}
-
-<div class="ms-3 mt-3">
-    <form class="" role="search" id="lunrSearch" onsubmit="lunr_search(); return false;">
-        <div class="input-group input-group-lg">
-            <input id="lunrSearchBox" class="form-control " type="text" placeholder="Introduce os termos de busca" >
-            <button class="btn btn-success" type="submit">
-                Buscar
-            </button>
-        </div>
-    </form>
     
     <table id="lunrResults" class="table table-responsive"></table>
 </div>
