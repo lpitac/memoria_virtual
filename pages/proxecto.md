@@ -10,7 +10,7 @@ credits: true
 
 {% include feature/jumbotron.html objectid="ferrol_1872.jpg" %}
 
-{% include feature/nav-menu.html sections="Sobre o proxecto;Tecnoloxía empregada" %}
+
 
 ## Sobre o proxecto
 
