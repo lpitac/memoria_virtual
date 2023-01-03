@@ -7,4 +7,4 @@ warning,
 danger,
 light,
 dark,
-dark_blue,rgb(0, 0, 139)
+dark_blue,#0d6efd
