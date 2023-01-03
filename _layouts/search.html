@@ -11,16 +11,15 @@ custom-foot: js/lunr-js.html
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Lunr Search Options</h5>
+                <h5 class="modal-title" id="modalLabel">Operadores de busca</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>These advanced options can be added to your query in the search box to refine your results:</p> 
+                <p>Podes empregar os seguintes operadores para acotar os resultados da busca:</p> 
                 <ul>
-                    <li>Search a specific field: use the field name, colon, then your query, e.g. <code>title:foo</code>, <code>date:1911</code>, <code>subject:tree</code>. In this collection you can use {{ fields | join: ", " }}.</li>
-                    <li>Wildcards: add <code>*</code> to match any character(s), e.g. <code>foo*</code>, <code>*oo</code>. This is helpful for using a root to find words with all related endings.</li>
-                    <li>Fuzzy match: add <code>~</code> plus a number at the end of your query to specify a higher level of fuzziness in search, e.g. <code>foo~1</code>. This can help with misspellings.</li>
-                    <li>Boost term: add <code>^</code> plus a number to boost the relevance of a term in your query, e.g. <code>foo^10</code>. This can help reduce clutter of unrelated results if one of your terms is most important.</li>
+                    <li>Buscar nun campo específico: utiliza o nome do campo, dous puntos e despois o termo de busca, p. ex.  <code>title:visita</code>, <code>date:1911</code>, <code>subject:autoridades</code>. Nesta colección podes empregar como campo de busca: {{ fields | join: ", " }}.</li>
+                    <li>Comodíns: engade <code>*</code> para que coincida con calquera carácter(s), p. ex. <code>ilustr*</code>, recuperará todos os rexistros que conteñan termos como ilustrador, ilustracións, ilustrada, ilustrativo, etc. <code>*ador</code>, recuperará todos os rexistros que conteñan palabras rematadas en "ador" como soldador, calorifugador, deseñador, etc.</li>
+                    <li>Coincidencia difusa: engade <code>^</code> seguido dunha cifra ao final da consulta para especificar o número de caracteres da palabra que poden ser engadidos, eliminados, cambiados ou transpostos a fin de atopar unha nova coincidencia, p. ex. <code>regulamento^1</code>, tamén recuperará rexistros que conteñan o termo "reglamento" xa que eliminando o carácter "u" no termo de busca daría lugar a esta coincidencia.</li>
                 </ul>
             </div>
         </div>
