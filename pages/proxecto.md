@@ -10,9 +10,9 @@ credits: true
 
 {% include feature/jumbotron.html objectid="id000000" %}
 
-{% include feature/accordion.html title1="Example section" text1="example1" title2="Section two" text2="example2" title3="Section three" text3=example3 %}
+## Sobre o proxecto
 
 {% include feature/nav-menu.html sections="Orixe;Agradecementos;" %}
 
-## Sobre o proxecto
+
 
