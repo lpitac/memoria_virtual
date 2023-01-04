@@ -8,11 +8,8 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html objectid="id000000" %}
-
-## Sobre o proxecto
-
 {% include feature/nav-menu.html sections="Orixe;Agradecementos;" %}
+## Orixe
 
 
-
+## Agradecementos
