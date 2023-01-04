@@ -1,5 +1,5 @@
 ---
-title: Site Search
+title: Busca avanzada
 layout: search
 permalink: /search/
 # see _data/search-config.csv for display options
