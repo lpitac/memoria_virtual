@@ -23,9 +23,9 @@
         var itemImage, itemLink;
         if (format.includes('image')) {
             itemImage= '<div class="spotlight gallery-img" data-download="true" data-src="' + objectLink + '"><img class="img-fluid" src="' + objectLink + '" alt="' + objectTitle + '"><p><small>Preme para ver a tamaño completo</small></p></div>';
-            itemLink= '<a href="' + objectLink + '" target="_blank" rel="noopener" class="m-2 btn btn-dark" title="Object download">Descargar imaxe</a>';
+            itemLink= '<a href="' + objectLink + '" target="_blank" rel="noopener" class="m-2 btn btn-primary" title="Object download">Descargar imaxe</a>';
         } else if (format.includes('pdf')) {
-            itemImage= '<object aria-label="' + objectTitle + '" data="' + objectLink + '" type="application/pdf" width="100%" height="450px"><p>The PDF is not rendering in your browser. Please use the button below to download the PDF.</p></object>';
+            itemImage= '<object aria-label="' + objectTitle + '" data="' + objectLink + '" type="application/pdf" width="100%" height="450px"><p>O PDF non se está renderizando no teu navegador. Preme no botón de abaixo para descargalo</p></object>';
             itemLink= '<a href="' + objectLink + '" target="_blank" rel="noopener" class="m-2 btn btn-dark" title="Object download">Descargar documento</a>';
         } else if (format.includes('audio')) {
             itemImage= '<audio controls class="w-100"><source src="' + objectLink + '">Your browser does not support the audio element.</audio>';
