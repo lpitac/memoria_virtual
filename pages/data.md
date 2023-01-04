@@ -9,5 +9,5 @@ permalink: /data.html
 ## Metadatos da colección
 
 A seguinte táboa ofrece ordenación e busca básica dos contidos da colección.
-Podes empregar os botóns "CSV" e "Excel" que se amosan a continuación para descargar os metadatos dunha busca.
-Tamén podes facer clic no botón "Descargar" na parte superior dereita para obter tódolos metadatos da colección en varios formatos de exportación.
+Podes empregar os botóns "Excel" e "CSV" que se amosan a continuación para descargar os metadatos dunha busca.
+Tamén podes premer no botón "Descargar Datos" para obter tódolos metadatos da colección en varios formatos de exportación.
