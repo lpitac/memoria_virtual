@@ -1,10 +1,10 @@
 {%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
 <div class="card mb-3">
     <div class="card-body">
-        <h5 class="card-title">Metadatos da colección</h5>
+        <h5 class="card-title">Datos abertos</h5>
         <p class="card-text text-center">
-            <a class="btn btn-sm btn-primary m-2" href="{{ '/assets/data/metadata.csv' | relative_url }}" target="_blank">Metadatos (CSV)</a>
-            <a class="btn btn-sm btn-primary m-2" href="{{ '/assets/data/metadata.json' | relative_url }}" target="_blank">Metadatos (JSON)</a>
+            <a class="btn btn-sm btn-primary m-2" href="{{ '/assets/data/metadata.csv' | relative_url }}" target="_blank">Colección completa (CSV)</a>
+            <a class="btn btn-sm btn-primary m-2" href="{{ '/assets/data/metadata.json' | relative_url }}" target="_blank">Colección completa (JSON)</a>
             {% if stubs contains "subject" %}
             <a class="btn btn-sm btn-primary m-2" href="{{ '/assets/data/subjects.json' | relative_url }}" target="_blank">Temas (JSON)</a>
             <a class="btn btn-sm btn-primary m-2" href="{{ '/assets/data/subjects.csv' | relative_url }}" target="_blank">Temas (CSV)</a>
