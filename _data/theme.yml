@@ -11,6 +11,7 @@
 featured-image: /assets/portada.jpg
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: 6em # Default is 8em
+optional: bottom
 # optional: change position of background image, center, top, bottom
 home-banner-image-position: # Default is center
 
