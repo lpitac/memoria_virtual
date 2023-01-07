@@ -1,16 +1,18 @@
-<div class="card mb-3">
-
-  <div class="card-body">
-    <h5 class="card-title">Buscar na colección</h5>
-    <script>
+ <script>
     function site_search() {
         var query = document.getElementById("site-search-1").value;
         window.open("{{ '/search/index.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
     }
 	</script>
+	
+<div class="card mb-3">
+
+  <div class="card-body">
+    <h5 class="card-title">Buscar na colección</h5>
+  
  <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
     <div class="input-group">
-        <input id="site-search-1" class="form-control " type="text" placeholder="Introduce os termos de busca..." aria-label="Search box">
+        <input id="site-search-1" class="form-control " type="text" placeholder="Introduce os termos de busca" aria-label="Search box">
         <button class="btn btn-primary btn-lg float-md-end" type="submit">
             Buscar
 		</button>
