@@ -1,5 +1,5 @@
 field,index,display
-objectid,true,false
+objectid,true,true
 title,true,true
 date,true,true
 description,true,true
