@@ -52,11 +52,11 @@ Ex. <code>regulamento^5</code>, tamén recuperará rexistros que conteñan o ter
             <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
                 <button class="dropdown-item browse-sort-item active" data-filter="random">aleatoria</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">por título</button>
-                {% assign sort_options = site.data.config-browse | where_exp: 'i','i.sort_name != nil' %}
+                {% assign sort_options = site.data.config-search | where_exp: 'i','i.sort_name != nil' %}
                 {% for o in sort_options %}
                 {% endfor %}
                 <button class="dropdown-item browse-sort-item" data-filter="date">por data</button>
-                {% assign sort_options = site.data.config-browse | where_exp: 'i','i.sort_name != nil' %}
+                {% assign sort_options = site.data.config-search | where_exp: 'i','i.sort_name != nil' %}
                 {% for o in sort_options %}
                 {% endfor %}
             </div>
