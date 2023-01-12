@@ -6,33 +6,38 @@
 {%- assign btn-text = include.btn-text | default: "Ver recurso" -%}
 
 <style>
-    #imageCarousel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
+    #imageCarrusel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
 </style>
 <div class="card mb-3">
     {% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{% endif %}
     <div class="card-body">
         {% if include.title %}<h5 class="card-title">{{ include.title }}</h5>{% endif %}
         
-        <div id="imageCarousel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">
+        <div id="imageCarrusel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">
 
 			
 		</div>
 	
-	 <div id="carouselIndicators" class="carousel-indicators">
-                
-     </div>
-            <div id="carouselInner" class="carousel-inner">
+	 <ol class="carousel-indicators">
+                <li data-target="#myCarousel" 
+                    data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel"
+                    data-slide-to="1"></li>
+                <li data-target="#myCarousel"
+                    data-slide-to="2"></li>
+     </ol>
+            <div id="carouselInner-1" class="carousel-inner">
                 <!-- Wrapper for slides -->
 			<div class="carousel-inner">
-				<div class="item active">
+				<div class="item active-1">
 					<img src=
 "https://lpitac.github.io/memoria_virtual/objects/id001001.jpg">
 				</div>
-				<div class="item">
+				<div class="item-1">
 					<img src=
 "https://lpitac.github.io/memoria_virtual/objects/id001002.jpg">
 				</div>
-				<div class="item">
+				<div class="item-1">
 					<img src=
 "https://lpitac.github.io/memoria_virtual/objects/id001003.jpg">
 				</div>
