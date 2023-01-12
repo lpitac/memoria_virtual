@@ -6,14 +6,14 @@
 {%- assign btn-text = include.btn-text | default: "Ver recurso" -%}
 
 <style>
-    #imageCarrusel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
+    #imageCarousel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
 </style>
 <div class="card mb-3">
     {% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{% endif %}
     <div class="card-body">
         {% if include.title %}<h5 class="card-title">{{ include.title }}</h5>{% endif %}
         
-        <div id="imageCarrusel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">
+        <div id="imageCarousel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">
 
 			
 		</div>
