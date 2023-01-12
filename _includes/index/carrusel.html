@@ -25,8 +25,7 @@
      </ol>
             <div id="carouselInner" class="carousel-inner">
                 <!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
+			<div class="carousel-item active">
 					<img src=
 "https://lpitac.github.io/memoria_virtual/objects/id001001.jpg">
 				</div>
@@ -38,7 +37,7 @@
 					<img src=
 "https://lpitac.github.io/memoria_virtual/objects/id001003.jpg">
 				</div>
-			</div>
+			
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -52,4 +51,22 @@
             
 </div>
 </div>
+
+<!-- Custom Controls -->
+<a href="javascript:void(0);" id="prevBtn">Prev Slide</a>
+<a href="javascript:void(0);" id="nextBtn">Next Slide</a>
+
+<script type="text/javascript">
+// Call carousel manually
+$('#imageCarousel').carousel();
+
+// Go to the previous item
+$("#prevBtn").click(function(){
+    $("#imageCarousel").carousel("prev");
+});
+// Go to the previous item
+$("#nextBtn").click(function(){
+    $("#imageCarousel").carousel("next");
+});
+</script>
 
