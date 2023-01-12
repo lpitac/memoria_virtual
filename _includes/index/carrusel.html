@@ -1,0 +1,60 @@
+<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+	</script>
+{%- assign image-items = site.data[site.metadata ] | where_exp: "item","item.format contains 'image'" -%}
+{%- assign youtube-items = site.data[site.metadata ] | where_exp: "item","item.youtubeid" -%}
+{%- if youtube-items -%}{%- assign carousel-items = image-items | concat: youtube-items -%}{%- else -%}{%- assign carousel-items = image-items -%}{% endif %}
+{%- assign carousel-max = include.max | default: 9 -%}
+{%- assign btn-color = include.btn-color | default: "primary" -%}
+{%- assign btn-text = include.btn-text | default: "Ver recurso" -%}
+
+<style>
+    #imageCarousel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
+</style>
+<div class="card mb-3">
+    {% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{% endif %}
+    <div class="card-body">
+        {% if include.title %}<h5 class="card-title">{{ include.title }}</h5>{% endif %}
+        
+        <div id="imageCarousel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">
+
+		<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src=
+"https://lpitac.github.io/memoria_virtual/objects/id001001.jpg">
+				</div>
+				<div class="item">
+					<img src=
+"https://lpitac.github.io/memoria_virtual/objects/id001002.jpg">
+				</div>
+				<div class="item">
+					<img src=
+"https://lpitac.github.io/memoria_virtual/objects/id001003.jpg">
+				</div>
+			</div>
+			
+		</div>
+	
+	 <div id="carouselIndicators" class="carousel-indicators">
+                
+     </div>
+            <div id="carouselInner" class="carousel-inner">
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Seguinte</span>
+            </button>
+    </div>
+            
+</div>
