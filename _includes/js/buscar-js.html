@@ -3,7 +3,7 @@
 {% assign icons = cb_icons.icons %}{%- endif -%}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 {%- assign fields = site.data.config-browse -%}
-{%- assign fields = site.data.config-search -%}
+
 {%- assign index_fields = fields | where: 'index','true' -%}
 <script src="{{ '/assets/lib/lunr.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/lunr-store.js' | relative_url }}"></script>
