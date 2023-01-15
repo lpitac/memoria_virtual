@@ -5,7 +5,9 @@ custom-foot: js/browse-js.html
 ---
 
 {{ content }}
-
+{% include feature/button.html text="Busca avanzada" link="https://lpitac.github.io/memoria_virtual/search/" color="primary" %}
+<a href="https://lpitac.github.io/memoria_virtual/search/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Busca avanzada</a>
+<div class="h2" id="numberOf"></div>
 <div class="row mb-3 justify-content-center">
     <div class="col-md-8 text-center">
         <form class="" role="search" id="lunrSearch" onsubmit="submitFilter(); return false;">
@@ -16,9 +18,7 @@ custom-foot: js/browse-js.html
             </div>
         </form>    
     </div>
-	{% include feature/button.html text="Busca avanzada" link="https://lpitac.github.io/memoria_virtual/search/" color="primary" %}
-	<a href="https://lpitac.github.io/memoria_virtual/search/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Busca avanzada</a>
-	<div class="h2" id="numberOf"></div>
+		
     <div class="col-md-2">
         <div class="dropdown">
             <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
