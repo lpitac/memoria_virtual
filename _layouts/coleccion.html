@@ -1,24 +1,23 @@
 ---
 # Páxina "Colección"
 layout: page
-custom-foot: js/buscar-js.html
+custom-foot: js/browse-js.html
 ---
 
 {{ content }}
 
 <div class="row mb-3 justify-content-center">
-<div class="ms-3 mt-3">
-    <form class="" role="search" id="lunrSearch" onsubmit="lunr_search(); return false;">
-        <div class="input-group input-group-lg">
-            <input id="lunrSearchBox" class="form-control " type="text" placeholder="Introduce os termos de busca..." >
-            <button class="btn btn-primary btn-lg float-md-end" type="submit">
-                Buscar
-            </button>
-        </div>
-    </form>
-<br>
     <div class="col-md-8 text-center">
-       
+        <form class="" role="search" id="lunrSearch" onsubmit="submitFilter(); return false;">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" id="filterTextBox" placeholder="Introduce o termo de busca ... " aria-label="Buscar"> 
+                <button class="btn btn-primary btn-lg float-md-end" type="submit" title="Filter items" alt="Search" id="filterButton" >Buscar</button>
+                <button class="btn btn-outline-secondary filter" onclick="resetFilter(); return false;" data-filter="">Limpar</button>
+            </div>
+        </form>    
+    </div>
+	<a href="https://lpitac.github.io/memoria_virtual/search/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Busca avanzada</a>
+	<div class="h2" id="numberOf"></div>
     <div class="col-md-2">
         <div class="dropdown">
             <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,9 +37,9 @@ custom-foot: js/buscar-js.html
         </div>
     </div>
 </div>
+
+<div id="loadingIcon" class="text-center">
+    <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Cargando...</span></div>
 </div>
-</div>
 
-
-
-<div class="row" id="lunrResults"></div>
+<div class="row" id="browseItems"></div>
