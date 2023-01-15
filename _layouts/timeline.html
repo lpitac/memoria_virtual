@@ -28,7 +28,7 @@ custom-foot: js/timeline-js.html
     </div>
 </div>
 
-<h3>De <a class="btn btn-primary" role="button" href="#y{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> a <a href="#y{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
+<h3>De <a class="btn btn-primary btn-lg" role="button" href="#y{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> a <a class="btn btn-primary btn-lg" role="button" href="#y{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
 
 <table id="timeline" class="table table-striped">
     {% for year in uniqueYears %}

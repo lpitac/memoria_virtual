@@ -7,6 +7,4 @@ permalink: /coleccion.html
 ---
 
 ## Explorar a Colección
-<a class="btn btn-primary" href="#" role="button">Link</a>
-<a href="https://lpitac.github.io/memoria_virtual/search/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Busca avanzada</a>
 
