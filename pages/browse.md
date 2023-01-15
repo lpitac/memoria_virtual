@@ -6,5 +6,5 @@ permalink: /coleccion.html
 # the Browse visualization will be added below the content in this file
 ---
 
-## Explorar a Colección
+## Explorar a colección
 <br>
