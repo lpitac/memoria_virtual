@@ -6,3 +6,4 @@ permalink: /timeline.html
 ---
 
 ## Liña de tempo
+Explora a colección de xeito cronolóxico, do máis antigo ao máis recente. Tamén podes avanzar a unha década en concreto seleccionándoa no botón despregable.
