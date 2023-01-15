@@ -7,4 +7,5 @@ permalink: /coleccion.html
 ---
 
 ## Explorar a colección
+<br>
 
