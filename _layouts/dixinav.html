@@ -2,17 +2,30 @@
 # Páxina "DixiNav"
 layout: page 
 ---
+
+{%- assign items = site.data[site.metadata] -%}
+
 <div class="row">
 
   <div class="col-md-12">
-{%- assign items = site.data[site.metadata] -%}
 
-{% include index/time.html %}
+	<div class="col-md-4">  
 
-{% include index/featured-terms.html field="subject" title="Temas destacados" btn-color="primary" %}
+		{% include index/time.html %}
+	</div>
+ 
+	<div class="col-md-4">  
 
-{% include index/objects.html %}
+{		% include index/featured-terms.html field="subject" title="Temas destacados" btn-color="primary" %}
+	</div>
+ 
+	<div class="col-md-4">  
 
-  </div>
+{		% include index/objects.html %}
+
+	</div>
+	
+   </div>
+
 </div>
 
