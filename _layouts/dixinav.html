@@ -1,67 +1,14 @@
 ---
 # Páxina "DixiNav"
-layout: search 
-custom-foot: js/lunr-js.html
+layout: page 
 ---
-{%- assign fields = site.data.config-search | where: 'index',true | map: 'field' -%}
+{%- assign items = site.data[site.metadata] -%}
 
-  <div class="col-md-3">  
+{% include index/time.html %}
 
-    {% include index/time.html %}
+{% include index/featured-terms.html field="subject" title="Temas destacados" btn-color="primary" %}
 
-    {% include index/featured-terms.html field="subject" title="Temas destacados" btn-color="primary" %}
-
-    {% include index/objects.html %}
-
-</div>
-
-{{ content }}
+{% include index/objects.html %}
 
 
 
-<div class="ms-3 mt-3">
-    <form class="" role="search" id="lunrSearch" onsubmit="lunr_search(); return false;">
-        <div class="input-group input-group-lg">
-            <input id="lunrSearchBox" class="form-control " type="text" placeholder="Introduce os termos de busca..." >
-            <button class="btn btn-primary btn-lg float-md-end" type="submit">
-                Buscar
-            </button>
-        </div>
-    </form>
-<br>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#operators">Operadores de busca</button>
-<!-- Modal -->
-<div class="modal fade" id="operators" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Operadores de busca</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Podes empregar os seguintes operadores para acotar os resultados da busca:</p> 
-                <ul>
-                    <li>Buscar nun campo específico: utiliza o nome do campo, dous puntos e despois o termo de busca.
-Ex.  <code>title:visita</code>
-        <code>date:1911</code>
-        <code>subject:autoridades</code>. Nesta colección podes empregar como campo de busca: {{ fields | join: ", " }}.</li>
-                    <li>Comodíns: engade <code>*</code> para que coincida con calquera carácter(s). 
-Ex. <code>ilustr*</code>, recuperará todos os rexistros que conteñan termos como ilustrador, ilustracións, ilustrada, ilustrativo, etc. 
-<code>*ador</code>, recuperará todos os rexistros que conteñan palabras rematadas en "ador" como soldador, calorifugador, deseñador, etc.</li>
-                    <li>Coincidencia difusa: engade <code>~</code> seguido dunha cifra ao final da consulta para especificar o número de caracteres da palabra que poden ser engadidos, eliminados, cambiados ou transpostos a fin de atopar unha nova coincidencia. 
-Ex. <code>regulamento^5</code>, tamén recuperará rexistros que conteñan o termo "regulamentación" xa que facendo 5 cambios no termo de busca daría lugar a esta coincidencia.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-    <table id="lunrResults" class="table table-responsive"></table>
-</div>
-
-<div class="mt-3">
-    <p class="text-muted"> <a href="" target="_blank" rel="noopener"></a>. <em></em></p>
-    {% if site.google-cse-id %}<p class="text-muted">Alternatively, try <a href="{{ '/search/google.html' | relative_url }}">Google CSE</a> site search.</p>{% endif %}
-</div>
