@@ -1004,4 +1004,4 @@ id001001,id001001.jpg,Image;StillImage,image/jpeg,Sig.001001,Vista área Astalei
 id001002,id001002.jpg,Image;StillImage,image/jpeg,Sig.001002,Office cociña do personal,2/2/1981,Pódese observar o uniforme do personal,cociña; Ferrol,,,,,,
 id001003,id001003.jpg,Image;StillImage,image/jpeg,Sig.001003,Enfermaría - Sala de Recoñecemento,2/2/1981,Nesta sala realizábanse os recoñecementos médicos.,Enfermaría; Ferrol,,,,,,
 id001004,https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg,Image;StillImage,image/jpeg,Sig.001004,Proba URL,1981,Descrición...,F110,,,,,,
-id001005,/assets/portada2.jpg,Image;StillImage,image/jpeg,Sig.001005,Proba baseURL,1981,Descrición...,F111,,,,,,
+id001005,assets/portada2.jpg,Image;StillImage,image/jpeg,Sig.001005,Proba baseURL,1981,Descrición...,F111,,,,,,
