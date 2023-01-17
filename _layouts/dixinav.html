@@ -5,11 +5,7 @@ custom-foot: js/lunr-js.html
 ---
 {%- assign fields = site.data.config-search | where: 'index',true | map: 'field' -%}
 
-  
-
-{{ content }}
-
-<div class="col-md-3">  
+  <div class="col-md-3">  
 
     {% include index/time.html %}
 
@@ -18,6 +14,10 @@ custom-foot: js/lunr-js.html
     {% include index/objects.html %}
 
 </div>
+
+{{ content }}
+
+
 
 <div class="ms-3 mt-3">
     <form class="" role="search" id="lunrSearch" onsubmit="lunr_search(); return false;">
