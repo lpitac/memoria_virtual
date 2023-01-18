@@ -1,6 +1,6 @@
 ---
 # Páxina "DixiNav"
-
+layout: page 
 ---
 
 {%- assign items = site.data[site.metadata] -%}
@@ -27,6 +27,6 @@
 
 	{% include index/nav-search.html %}
 	</div>
-	
+	{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="id001001" width="25" centered=true %}
 </div>
 
