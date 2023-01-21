@@ -6,6 +6,8 @@ custom-foot: js/browse-js.html
 
 {{ content }}
 
+{% include cb/credits.html %}
+
 <div class="row mb-4 justify-content-center">
     <div class="col-md-6 text-center">
         <form class="" role="search" id="lunrSearch" onsubmit="submitFilter(); return false;">
@@ -40,7 +42,8 @@ custom-foot: js/browse-js.html
 		<a href="https://lpitac.github.io/memoria_virtual/search/" class="btn btn-primary mt-1 btn active" role="button" aria-pressed="true">Busca avanzada</a>
 	</div>
 <br>
-</br>
+<br>
+<br>
 <div id="numerototal" class="text-center">
 		<div class="h2" id="numberOf"></div>
 </div>		
