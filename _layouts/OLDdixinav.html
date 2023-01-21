@@ -1,0 +1,33 @@
+---
+# Páxina "DixiNav"
+layout: page 
+---
+
+{%- assign items = site.data[site.metadata] -%}
+
+<div class="row text-center">
+
+ 	<div class="col-md-4">  
+
+	{% include index/time.html %}
+	</div>
+ 
+	<div class="col-md-4">  
+
+     {% include index/featured-terms.html field="subject" title="Temas destacados" btn-color="primary" %}
+	</div>
+ 
+	<div class="col-md-4">  
+
+    {% include index/objects.html %}
+
+	</div>
+
+	<div class="col-md-12">
+
+	{% include index/nav-search.html %}
+	</div>
+	{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="id001001" width="25" centered=true %}
+{% include feature/image.html objectid="id001001;id001002;id001055"  %}
+</div>
+

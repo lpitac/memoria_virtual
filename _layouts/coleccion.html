@@ -6,26 +6,6 @@ custom-foot: js/browse-js.html
 
 {{ content }}
 
-{%- assign items = site.data[site.metadata] -%}
-
-<div class="row text-center">
-
- 	<div class="col-md-4">  
-
-	{% include index/time.html %}
-	</div>
- 
-	<div class="col-md-4">  
-
-     {% include index/featured-terms.html field="subject" title="Temas destacados" btn-color="primary" %}
-	</div>
- 
-	<div class="col-md-4">  
-
-    {% include index/objects.html %}
-
-	</div>
-
 <div class="row mb-4 justify-content-center">
     <div class="col-md-6 text-center">
         <form class="" role="search" id="lunrSearch" onsubmit="submitFilter(); return false;">
