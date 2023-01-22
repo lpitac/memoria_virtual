@@ -1,6 +1,7 @@
 field,index,display
 title,true,true
 objectid,true,true
+filename,true,true
 date,true,true
 description,true,true
 subject,true,true
