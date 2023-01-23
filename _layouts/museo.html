@@ -1,0 +1,25 @@
+---
+# Páxina "Museo"
+layout: paxina
+custom-foot: js/browse-js.html
+---
+
+{{ content }}
+
+{%- assign items = site.data[site.metadata] -%}
+
+<div class="row text-center">
+
+ 	<div class="col-md-6">  
+
+	{% include index/benvida.html %}
+    	
+	</div>
+ 
+	<div class="col-md-6">  
+
+     {% include index/carousel.html title="Benvid@s" height="300" %}
+	</div>
+ 
+</div>
+
