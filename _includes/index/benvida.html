@@ -1,8 +1,7 @@
 <div class="card mb-3">
   <div class="card-body">
-    <h5 class="card-title">Descrición</h5>
-    <p class="card-text">{{ site.description }}</p>
-    {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
-    {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Ler máis &raquo;</a>{% endif %}
+    <h5 class="card-title">Benvid@s</h5>
+    <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+   <a class="btn btn-outline-primary" href="{{ '/coleccion.html' | relative_url }}" >Exposición permanente &raquo;</a>{% endif %}
   </div>
 </div>
