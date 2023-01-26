@@ -1,15 +1,23 @@
 <!doctype html>
 <html lang="en" class="h-100">
-  <head prefix="og: http://ogp.me/ns#">
+<head prefix="og: http://ogp.me/ns#">
     {% include head/head.html %}
-  </head>
-  <body>
+</head>
+<body>
+  <div class="container">
+   <div class="row">
+    <div class="col">
      {% include index/menulateral.html %}
-    <main id="maincontent" role="main" class="flex-shrink-0">
-    {{ content }}
-    </main>
-    {% include footer.html %}
-    {% include foot.html %}
-    {% include scroll-to-top.html %}
+	</div>
+	<div class="col">
+		<main id="maincontent" role="main" class="flex-shrink-0">
+		{{ content }}
+		</main>
+	</div>
+		{% include footer.html %}
+		{% include foot.html %}
+		{% include scroll-to-top.html %}
+   </div>
+</div>
   </body>
 </html>
