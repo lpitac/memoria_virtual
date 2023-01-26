@@ -1,22 +1,23 @@
 <!doctype html>
-<html lang="es" class="h-100">
+<html lang="en" class="h-100">
 <head prefix="og: http://ogp.me/ns#">
     {% include head/head.html %}
 </head>
 
   <div class="container">
-   <div class="row">
+   <div class="row justify-content-md-center">
     <div class="col-md-auto">
      {% include index/menulateral.html %}
 	</div>
-	<div class="col-md-auto">
+	<div class="col">
+		<main id="maincontent" role="main" class="flex-shrink-0">
 		{{ content }}
+		</main>
 	</div>
-		
-   </div>
-</div>
-<!--		{% include footer.html %}
+		{% include footer.html %}
 		{% include foot.html %}
 		{% include scroll-to-top.html %}
--->
+   </div>
+</div>
+  </body>
 </html>
